@@ -44,7 +44,7 @@ console.log(methodsPartnerResult);
 
 #### Code:
 
-> [src/index.ts](https://github.com/takahitomiyamoto/heat-sfdx-common/blob/master/src/index.ts)
+> [src/index.ts](https://github.com/takahitomiyamoto/heat-sfdx-soap/blob/master/src/index.ts#L12)
 
 <br>
 
