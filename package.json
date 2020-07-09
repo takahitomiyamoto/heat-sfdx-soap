@@ -1,0 +1,37 @@
+{
+  "name": "heat-sfdx-soap",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "takahitomiyamoto",
+  "keywords": [
+    "salesforce",
+    "sfdx",
+    "soap-api"
+  ],
+  "bugs": {
+    "url": "https://github.com/takahitomiyamoto/heat-sfdx-soap/issues"
+  },
+  "homepage": "https://github.com/takahitomiyamoto/heat-sfdx-soap#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takahitomiyamoto/heat-sfdx-soap.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prettier": "prettier \"**/*.{ts,json,md}\" --write --loglevel log"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "dependencies": {
+    "@types/bluebird": "3.5.32",
+    "@types/node": "14.0.20",
+    "heat-sfdx-common": "0.1.8",
+    "soap": "0.31.0",
+    "typescript": "3.9.6"
+  }
+}
