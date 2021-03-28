@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>heat-sfdx-soap</title>
+	<meta name="description" content="Documentation for heat-sfdx-soap">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">heat-sfdx-soap</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>heat-sfdx-soap</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License">
+					<a href="https://badge.fury.io/js/heat-sfdx-soap"><img src="https://badge.fury.io/js/heat-sfdx-soap.svg" alt="npm version"></a>
+					<a href="https://david-dm.org/takahitomiyamoto/heat-sfdx-soap"><img src="https://david-dm.org/takahitomiyamoto/heat-sfdx-soap.svg" alt="dependencies status"></a>
+					<a href="https://david-dm.org/takahitomiyamoto/heat-sfdx-soap#info=devDependencies"><img src="https://david-dm.org/takahitomiyamoto/heat-sfdx-soap/dev-status.svg" alt="devDependency status"></a>
+				<a href="https://codeclimate.com/github/takahitomiyamoto/heat-sfdx-soap"><img src="https://codeclimate.com/github/takahitomiyamoto/heat-sfdx-soap.svg" alt="Code Climate"></a></p>
+				<a href="#heat-sfdx-soap" id="heat-sfdx-soap" style="color: inherit; text-decoration: none;">
+					<h1>heat-sfdx-soap</h1>
+				</a>
+				<p>This package is responsible for the SOAP API features of the heat-sfdx series.</p>
+				<a href="#heat-sfdx-series" id="heat-sfdx-series" style="color: inherit; text-decoration: none;">
+					<h2>heat-sfdx series</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th align="left">category</th>
+							<th align="left">package</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td align="left">Metadata API</td>
+							<td align="left"><a href="https://github.com/takahitomiyamoto/heat-sfdx-metadata">heat-sfdx-metadata</a></td>
+						</tr>
+						<tr>
+							<td align="left">SOAP API</td>
+							<td align="left"><a href="https://github.com/takahitomiyamoto/heat-sfdx-soap">heat-sfdx-soap</a></td>
+						</tr>
+						<tr>
+							<td align="left">Tooling API</td>
+							<td align="left"><a href="https://github.com/takahitomiyamoto/heat-sfdx-tooling">heat-sfdx-tooling</a></td>
+						</tr>
+						<tr>
+							<td align="left">Common</td>
+							<td align="left"><a href="https://github.com/takahitomiyamoto/heat-sfdx-common">heat-sfdx-common</a></td>
+						</tr>
+				</tbody></table>
+				<a href="#how-to-install" id="how-to-install" style="color: inherit; text-decoration: none;">
+					<h2>How to install</h2>
+				</a>
+				<pre><code class="language-sh"><span style="color: #000000">yarn add --dev --exact heat-sfdx-soap --update-checksums</span>
+</code></pre>
+				<a href="#reference" id="reference" style="color: inherit; text-decoration: none;">
+					<h2>Reference</h2>
+				</a>
+				<a href="#methodspartner" id="methodspartner" style="color: inherit; text-decoration: none;">
+					<h3>methodsPartner</h3>
+				</a>
+				<blockquote>
+					<p>show all methods of Partner WDSL</p>
+				</blockquote>
+				<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+					<h4>Example:</h4>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">methodsMetadataResultString</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">methodsMetadata</span><span style="color: #000000">(</span><span style="color: #001080">authorization</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">methodsMetadataResult</span><span style="color: #000000"> = </span><span style="color: #267F99">JSON</span><span style="color: #000000">.</span><span style="color: #795E26">parse</span><span style="color: #000000">(</span><span style="color: #001080">methodsMetadataResultString</span><span style="color: #000000">);</span>
+<span style="color: #001080">methodsPartnerResult</span><span style="color: #000000">.</span><span style="color: #795E26">sort</span><span style="color: #000000">();</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">methodsPartnerResult</span><span style="color: #000000">);</span>
+</code></pre>
+				<pre><code class="language-sh"><span style="color: #000000">[</span><span style="color: #A31515">&quot;changeOwnPassword&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;convertLead&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;create&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;delete&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;deleteByExample&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeAllTabs&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeAppMenu&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeApprovalLayout&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeAvailableQuickActions&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeCompactLayouts&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeDataCategoryGroupStructures&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeDataCategoryGroups&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeDataCategoryMappings&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeGlobal&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeGlobalTheme&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeKnowledgeSettings&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeLayout&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeNouns&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describePathAssistants&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describePrimaryCompactLayouts&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeQuickActions&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeQuickActionsForRecordType&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSObject&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSObjectListViews&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSObjects&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSearchLayouts&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSearchScopeOrder&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSearchableEntities&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSoftphoneLayout&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeSoqlListViews&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeTabs&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeTheme&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;describeVisualForce&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;emptyRecycleBin&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;executeListView&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;findDuplicates&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;findDuplicatesByIds&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;getDeleted&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;getServerTimestamp&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;getUpdated&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;getUserInfo&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;invalidateSessions&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;login&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;logout&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;merge&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;performQuickActions&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;process&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;query&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;queryAll&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;queryMore&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;renderEmailTemplate&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;renderStoredEmailTemplate&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;resetPassword&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;retrieve&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;retrieveMassQuickActionTemplates&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;retrieveQuickActionTemplates&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;search&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;sendEmail&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;sendEmailMessage&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;setPassword&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;undelete&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;update&quot;</span><span style="color: #000000">,</span><span style="color: #A31515">&quot;upsert&quot;</span><span style="color: #000000">]</span>
+</code></pre>
+				<a href="#code" id="code" style="color: inherit; text-decoration: none;">
+					<h4>Code:</h4>
+				</a>
+				<blockquote>
+					<p><a href="https://github.com/takahitomiyamoto/heat-sfdx-soap/blob/master/src/index.ts#L12">src/index.ts</a></p>
+				</blockquote>
+				<br>
+				<a href="#emoji" id="emoji" style="color: inherit; text-decoration: none;">
+					<h2>Emoji</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th align="left">emoji</th>
+							<th align="left">definition</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td align="left">:recycle:</td>
+							<td align="left">refactored anything</td>
+						</tr>
+						<tr>
+							<td align="left">:bug:</td>
+							<td align="left">fixed any bug</td>
+						</tr>
+						<tr>
+							<td align="left">:+1:</td>
+							<td align="left">improved any features</td>
+						</tr>
+						<tr>
+							<td align="left">:sparkles:</td>
+							<td align="left">added any features</td>
+						</tr>
+						<tr>
+							<td align="left">:fire:</td>
+							<td align="left">removed any features</td>
+						</tr>
+						<tr>
+							<td align="left">:tada:</td>
+							<td align="left">made a major change for any features</td>
+						</tr>
+				</tbody></table>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function">
+						<a href="modules.html#methodspartner" class="tsd-kind-icon">methods<wbr>Partner</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#specificationpartner" class="tsd-kind-icon">specification<wbr>Partner</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
