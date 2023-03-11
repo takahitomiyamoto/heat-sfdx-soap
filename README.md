@@ -32,8 +32,8 @@ yarn add --dev --exact heat-sfdx-soap --update-checksums
 #### Example:
 
 ```js
-const methodsMetadataResultString = await methodsMetadata(authorization);
-const methodsMetadataResult = JSON.parse(methodsMetadataResultString);
+const methodsPartnerResultString = await methodsPartner(authorization);
+const methodsPartnerResult = JSON.parse(methodsPartnerResultString);
 methodsPartnerResult.sort();
 console.log(methodsPartnerResult);
 ```
